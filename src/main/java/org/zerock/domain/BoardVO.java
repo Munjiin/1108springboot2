@@ -25,7 +25,7 @@ public class BoardVO {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_board") //아이디를 자동으로 만드는 것, 제너레이터는 시퀀스 네임
 	@SequenceGenerator(name="seq_board", sequenceName="SEQ_BOARD") //시퀀스를 만드는 것
-	private Long bno;
+	private Long bno;      
 	
 	@Column(length=300)
 	private String title;
